@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AleWeb</title>
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="AW.png" type="image/x-icon">
+    <link rel="shortcut icon" href="AW.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="" class="navbar-brand">AleWeb</a>
+  
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-links">
+                <li><a href="menuprincipal/menuprincipal.html">login</a></li>
+                <button class="theme-toggle-button" onclick="toggleTheme()">Cambiar Modo</button>
+            </ul>
+        </div>
+    </nav>
+     <!-- Botón flotante para abrir/cerrar el chatbot -->
+     <div id="chatbotToggle" class="chatbot-toggle">
+        <button id="toggleButton" class="chatbot-toggle-button">
+            <span>💬</span>
+        </button>
+    </div>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot hidden">
+        <div class="chatbot-header">
+            <h2>Kali ai </h2>
+            <button id="closeChatbot" class="close-button">✖</button>
+        </div>
+        <div id="chatDisplay" class="chatbot-body">
+            <div class="chat-message self-end">Hola, soy tu asistente personal. ¿En qué puedo ayudarte hoy?</div>
+            
+            <!-- Messages-->
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
+            <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+    <header class="header" id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Bienvenidos a AleWeb</h1>
+
+                <a href="menuprincipal/menuprincipal.html" class="hero-button">Ver Mas</a>
+            </div>
+        </div>
+    </header>
+
+    <script src="intro.js"></script>
+</body>
+</html>
+                                

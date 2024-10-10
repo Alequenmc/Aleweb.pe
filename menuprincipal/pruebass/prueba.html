@@ -1,0 +1,538 @@
+
+
+bg-gradient-to-t from-sky-50 to-cyan-500
+
+<body class="bg-gradient-to-br from-blue-50 via-blue-200 to-indigo-300 min-h-screen">
+    <aside id="sidebar" class="w-80 bg-gradient-to-b from-blue-900 via-indigo-800 to-purple-800 text-white h-screen fixed top-0 left-0 flex flex-col transform transition-transform duration-500 ease-in-out -translate-x-full md:translate-x-0 z-50 overflow-y-auto shadow-2xl rounded-tr-3xl rounded-br-3xl scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-blue-800">
+        <div class="p-6 sidebar-header flex flex-col items-center relative">
+            <button id="closeSidebarBtn" class="absolute top-4 right-4 text-white text-2xl hover:text-blue-300 transition-colors duration-300 transform hover:scale-110">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="relative group">
+                <img src="AW.png" alt="Perfil" class="rounded-full w-32 h-32 mb-3 shadow-lg ring-4 ring-blue-400 group-hover:ring-blue-300 transition-all duration-300 pulse-glow">
+                <span class="absolute bottom-0 right-0 bg-green-500 rounded-full p-1.5 ring-2 ring-white group-hover:bg-blue-400 transition-colors duration-300">
+                    <i class="fas fa-check text-xs"></i>
+                </span>
+            </div>
+            <h3 id="userName" class="text-3xl font-bold bg-gradient-to-r from-blue-300 to-cyan-200 text-transparent bg-clip-text">ALEX</h3>
+            <span id="userStatus" class="text-gray-300 text-sm mt-1">Usuario free</span>
+            <div class="mt-3 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full px-4 py-1 text-xs font-semibold flex items-center space-x-2">
+                <span id="userLevel">Nivel 1</span>
+                <div class="w-20 bg-blue-800 rounded-full h-2">
+                    <div id="expBar" class="w-3/4 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full h-2 transition-all duration-300"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="flex-1 mt-6 px-4">
+            <ul class="space-y-2">
+                <li>
+                    <a href="#inicio" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-home text-blue-300 group-hover:text-cyan-200 transition-colors duration-300"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="explorar/explorar.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-compass text-cyan-300 group-hover:text-blue-200 transition-colors duration-300"></i>
+                        <span>Explorar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notificaciones" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-bell text-yellow-300 group-hover:text-yellow-200 transition-colors duration-300"></i>
+                        <span>Notificaciones</span>
+                        <span class="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs rounded-full px-2 ml-auto group-hover:from-red-400 group-hover:to-pink-400 transition-colors duration-300">5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plan-vip.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-crown text-yellow-300 group-hover:text-yellow-200 transition-colors duration-300"></i>
+                        <span>Plan Premium</span>
+                        <span id="premiumStatus" class="bg-gradient-to-r from-yellow-400 to-blue-400 text-white text-xs rounded-full px-2 ml-auto group-hover:from-yellow-300 group-hover:to-blue-300 transition-all duration-300">INACTIVO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="socios/socios.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-handshake text-green-300 group-hover:text-green-200 transition-colors duration-300"></i>
+                        <span>Nuestros Socios</span>
+                    </a>
+                </li>
+              
+                <li>
+                    <a href="ia/asistente.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-robot text-purple-300 group-hover:text-purple-200 transition-colors duration-300"></i>
+                        <span>Kali Ai</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventos/eventos.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-calendar-alt text-orange-300 group-hover:text-orange-200 transition-colors duration-300"></i>
+                        <span>Eventos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="favoritos/favoritos.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-heart text-red-300 group-hover:text-red-200 transition-colors duration-300"></i>
+                        <span>Favoritos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="comunidad/foro.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-users text-teal-300 group-hover:text-teal-200 transition-colors duration-300"></i>
+                        <span>Foro de la Comunidad</span>
+                    </a>
+                </li>
+              
+               
+                <li>
+                    <a href="setting/Ajustes.html" class="block py-2.5 px-4 hover:bg-gradient-to-r hover:from-blue-700 hover:to-indigo-700 rounded-lg transition-all duration-300 ease-in-out flex items-center space-x-3 group">
+                        <i class="fas fa-cog text-gray-300 group-hover:text-gray-200 transition-colors duration-300"></i>
+                        <span>Ajustes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <style>
+        
+            @media (max-width: 768px) {
+                .carousel-images img {
+                    max-height: 300px; 
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .carousel-btn {
+                    padding: 0.3rem;
+                }
+            
+                .left-btn, .right-btn {
+                    font-size: 1.2rem;
+                    padding: 0.4rem;
+                }
+            
+                .carousel-images img {
+                    max-height: 250px; 
+                }
+            }
+            @keyframes pulseGlow {
+                        0%, 100% { box-shadow: 0 0 5px 0 rgba(1, 183, 255, 0.5); }
+                        50% { box-shadow: 0 0 20px 10px rgba(59, 130, 246, 0.5); }
+                    }
+                    .pulse-glow {
+                        animation: pulseGlow 2s infinite;
+                    }
+                </style>
+            </head>
+            
+                  <div class="mt-auto p-4">
+                      <a href="ayuda/soporte.html" class="block py-2.5 px-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 rounded-lg transition-all duration-300 ease-in-out text-center font-semibold mb-2 transform hover:scale-105">
+                          <i class="fas fa-question-circle mr-2"></i> Soporte
+                      </a>
+                      <a href="log out/salir.html" class="block py-2.5 px-4 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 rounded-lg transition-all duration-300 ease-in-out text-center font-semibold transform hover:scale-105">
+                          <i class="fas fa-sign-out-alt mr-2"></i> Cerrar Sesión
+                      </a>
+                  </div>
+                  <div class="p-4 text-center text-xs text-gray-400">
+                      <p>&copy; 2024 Aleweb. Todos los derechos reservados.</p>
+                      <a href="#" class="text-blue-300 hover:text-blue-200 transition-colors duration-300 mt-1 inline-block">Términos y Condiciones</a>
+                      <a href="#" class="text-blue-300 hover:text-blue-200 transition-colors duration-300 mt-1 inline-block ml-2">Política de Privacidad</a>
+                  </div>
+              </aside>
+            </body>
+              
+                
+                <main id="main-content" class="ml-0 md:ml-80 p-6 transition-all duration-300">
+                  <button id="sidebarToggleBtn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300 ease-in-out mb-4">☰</button>
+                  
+                  
+                  
+                  
+                  <section id="inicio" class="mt-10 p-10 text-center">
+                    <h1 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-sky-400">
+                        Bienvenido a <span class="bg-clip-text bg-gradient-to-r from-blue-800 to-sky-300">Aleweb</span>
+                    </h1>
+                    <p class="text-xl mb-8 leading-relaxed mx-auto max-w-3xl">
+                       asufgaksfglauidgjhfgbsdgfuyGWYESFDJFHLGJFDAFFDSFGUgugerugowrooiewroi
+            
+                    </p>
+                    <div class="flex justify-center">
+                        <button class="bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out">
+                            Comienza ahora
+                        </button>
+                    </div>
+                </section>
+                
+            
+            
+            
+            
+            
+                
+              
+                  <section id="servicios" class="mt-16 animate-fade-in-up">
+                      <h2 class="text-3xl font-bold mb-6 text-center">Servicios que Ofrecemos</h2>
+                      <p class="text-lg mb-8 text-center">Explora nuestros servicios y descubre una variedad de recursos: descarga videos, accede a IA, imágenes, y mucho más, ¡todo completamente gratis!</p>
+                      <div id="carouselServicios" class="flex overflow-x-auto space-x-6 pb-6">
+                          <div class="min-w-[300px] bg-gradient-to-br from-blue-300 to-blue-600 p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-105 transform hover:-translate-y-2">
+                              <div class="flex items-center justify-center mb-4">
+                                  <i class="fas fa-video text-white text-4xl"></i>
+                              </div>
+                              <h3 class="text-xl font-semibold mt-2 text-white text-center">Descarga de Videos</h3>
+                              <p class="text-white text-center mt-2">Accede y descarga videos en diferentes formatos y calidades, totalmente gratis.</p>
+                          </div>
+                          <div class="min-w-[300px] bg-gradient-to-br from-green-300 to-green-600 p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-105 transform hover:-translate-y-2">
+                              <div class="flex items-center justify-center mb-4">
+                                  <i class="fas fa-robot text-white text-4xl"></i>
+                              </div>
+                              <h3 class="text-xl font-semibold mt-2 text-white text-center">Inteligencia Artificial</h3>
+                              <p class="text-white text-center mt-2">Interactúa con nuestras IAs avanzadas como ash y kali ai.</p>
+                          </div>
+                          <div class="min-w-[300px] bg-gradient-to-br from-purple-300 to-purple-600 p-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-105 transform hover:-translate-y-2">
+                              <div class="flex items-center justify-center mb-4">
+                                  <i class="fas fa-image text-white text-4xl"></i>
+                              </div>
+                              <h3 class="text-xl font-semibold mt-2 text-white text-center">Imágenes y Plantillas</h3>
+                              <p class="text-white text-center mt-2">Recursos gratuitos para tus proyectos y necesidades creativas.</p>
+                          </div>
+                      </div>
+                  </section>
+                </main>
+              
+                <main id="main-content" class="ml-0 md:ml-80 p-6 transition-all duration-300">
+                  <section id="evolution-section" class="mt-20 p-8 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 rounded-xl text-white overflow-hidden relative">
+                    <h2 class="text-4xl font-bold mb-8 text-center animate-pulse">Nuestra Evolución</h2>
+                    
+                    <div class="relative" x-data="{ activeYear: 2020, years: [2020, 2021, 2022, 2023, 2024], currentIndex: 0 }" x-init="setInterval(() => { currentIndex = (currentIndex + 1) % years.length; activeYear = years[currentIndex] }, 7000)">
+                      <div class="absolute left-1/2 transform -translate-x-1/2 top-0 w-1 h-full bg-white"></div>
+                      
+                      <div class="relative ml-8">
+                        <template x-for="year in years">
+                          <div class="mb-12 relative">
+                            <!-- Año Circular -->
+                            <div class="absolute -left-7 w-8 h-8 bg-white rounded-full shadow-lg transition-transform transform-gpu duration-300 ease-in-out hover:scale-110" :class="{ 'scale-150 ring-4 ring-yellow-400': activeYear === year }"></div>
+                            <h3 class="text-2xl font-semibold cursor-pointer hover:text-yellow-300 transition-colors duration-300" x-text="year" @click="activeYear = year"></h3>
+                            
+                            <!-- Descripción del Año -->
+                            <p x-show="activeYear === year" x-transition:enter="transition-opacity ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-in duration-500" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="mt-2 bg-white text-indigo-900 rounded-lg p-6 shadow-md transform-gpu transition-transform duration-300 hover:scale-105">
+                              <template x-if="year === 2020">
+                                <span>Iniciamos estableciendo las bases de nuestros futuros desarrollos en inteligencia artificial y plataformas tecnológicas.</span>
+                              </template>
+                              <template x-if="year === 2021">
+                                <span>Lanzamos la versión v1.2.1.0 de Aislin, una IA avanzada que marcó un antes y un después en nuestra capacidad para crear asistentes inteligentes con emociones.</span>
+                              </template>
+                              <template x-if="year === 2022">
+                                <span>Consolidamos nuestro equipo de desarrollo y comenzamos a explorar nuevas tecnologías, lo que nos permitió acelerar el progreso de nuestras plataformas y servicios.</span>
+                              </template>
+                              <template x-if="year === 2023">
+                                <span>Nos enfocamos en la mejora continua y lanzamos nuevas versiones de IA más sofisticadas, aumentando la personalización y capacidad de nuestras soluciones automatizadas.</span>
+                              </template>
+                              <template x-if="year === 2024">
+                                <span>Ampliamos nuestra oferta con el lanzamiento de Alekazin, una plataforma integral que automatiza el acceso a múltiples servicios tecnológicos en un solo lugar, brindando una experiencia fluida y personalizada para los usuarios.</span>
+                              </template>
+                            </p>
+                          </div>
+                        </template>
+                      </div>
+                    </div>
+                  </section>
+                  
+            
+            </section>
+            Personal
+FREE
+
+Acceso a aleweb gratis
+descarga de videos
+Aislinn ia basica
+recursos gratis
+YA EN USO
+Team
+$15
+
+Acceso a más funciones y recursos
+Acceso a aleweb y humbix
+Aislinn IA intermedio
+Acceso anticipado a nuevas funcionalidades
+Soporte técnico prioritario
+Actualizaciones periódicas y mantenimiento
+COMENZAR
+Enterprise
+$50
+
+Descargas en alta velocidad
+Aislinn y Archie IA avanzadas
+Más de 100 recursos
+Acceso a webs exclusivos
+Consultorías personalizadas
+Asesoramiento
+Acceso prioritario al soporte técnico
+Actualizaciones y mejoras constantes
+COMENZAR
+
+
+
+<header>
+    <nav id="header_" class="fixed top-0 left-0 z-20 w-full transition-all ease-in">
+        <div class="container m-auto px-6 md:px-12 lg:px-6">
+            <div class="flex flex-wrap items-center justify-between py-6 md:py-4 md:gap-0">
+                <div class="w-full flex items-center justify-between lg:w-auto">
+                    <a href="#" aria-label="logo">
+                        <img src="images/logo.svg" class="w-36" alt="tailus logo" width="144" height="48">
+                    </a>
+
+                    <div class="block max-w-max">
+                        <button aria-label="humburger" id="hamburger" class="block relative h-auto lg:hidden">
+                            <div aria-hidden="true" id="line" class="m-auto h-0.5 w-6 rounded bg-gray-100 transition duration-300"></div>
+                            <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-6 rounded bg-gray-100 transition duration-300"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="navbar" class="flex h-0 lg:h-auto overflow-hidden lg:flex lg:pt-0 w-full md:space-y-0 lh:p-0 md:bg-transparent lg:w-auto transition-all duration-300">
+                    <div id="navBox" class="w-full p-6 lg:p-0 bg-white bg-opacity-40 backdrop-blur-md lg:items-center flex flex-col lg:flex-row lg:bg-transparent transition-all ease-in">
+                        <ul class="space-y-6 pb-6 tracking-wide font-medium text-gray-800 lg:text-gray-100 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
+                            <li>
+                                <a href="#" class="block md:px-3">
+                                    <span>Product</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block md:px-3">
+                                    <span>Use Cases</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block md:px-3">
+                                    <span>Integrations</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block md:px-3">
+                                    <span>Pricing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block md:px-3">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="border-t w-full lg:w-max gap-3 pt-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border-l flex flex-col lg:gap-0 lg:items-center lg:flex-row">
+                            <li class="flex w-full lg:max-w-max justify-center">
+                                       <button type="button" title="Start buying" class="flex w-full py-3 px-6 rounded-md text-center transition border border-purple-600 bg-white bg-opacity-40 backdrop-blur-md lg:backdrop-blur-none lg:bg-opacity-0 lg:bg-transparent lg:border-transparent active:border-purple-400 justify-center max-w-lg lg:max-w-max">
+                                    <span class="block text-gray-700 lg:text-white font-semibold">
+                                        Login
+                                    </span>
+                                </button>
+                            </li>
+
+                            <li class="flex w-full lg:max-w-max justify-center">
+                                <button type="button" title="Start buying" class="flex w-full py-3  px-6 rounded-lg text-center transition bg-purple-600 lg:bg-white active:bg-purple-700 lg:active:bg-purple-200 focus:bg-purple-500 lg:focus:bg-purple-100 justify-center max-w-lg lg:max-w-max">
+                                    <span class="block text-sm text-white lg:text-purple-600 font-semibold">
+                                        Sign In
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="relative">
+    
+    <img class="absolute inset-0 w-full h-full object-cover object-top" src="images/background2.webp" width="400" height="500" alt="hero background image">
+    <div aria-hidden="true" class="absolute inset-0 w-full h-full bg-purple-900 bg-opacity-30 backdrop-blur-sm"></div>
+    <div class="relative container m-auto px-6 md:px-12 lg:px-6">
+        <div class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto">
+            <h1 class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl">
+                Don't look again for your next freelance projects, you got them.
+            </h1>
+
+            <form action="" class="w-full">
+                <div class="relative flex p-1 rounded-xl bg-white shadow-2xl md:p-2">
+                    <div id="catJobBox" class="hidden text-gray-600 relative md:flex justify-between items-center min-w-max select-none">
+                        <input type="checkbox" name="" id="toggleJobLstCat" class="peer hidden outline-none">
+                        <input type="text" name="" id="catJobName" value="Design" class="pl-3 w-full bg-white text-base font-medium cursor-pointer" readonly>
+                        <label for="toggleJobLstCat" class="absolute top-0 left-0 w-full h-full"></label>
+                        <span class="min-w-max">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div id="catJobLst" class="absolute transition-all duration-500 ease-in-out translate-y-10 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-y-1 top-full left-0 w-full bg-white bg-opacity-80 rounded-lg py-2">
+                            <ul class="flex flex-col w-full">
+                                <li class="cursor-default transition hover:bg-gray-100 hover:bg-opacity-80 flex px-5 py-2">Design</li>
+                                <li class="cursor-default transition hover:bg-gray-100 hover:bg-opacity-80 flex px-5 py-2">Development</li>
+                                <li class="cursor-default transition hover:bg-gray-100 hover:bg-opacity-80 flex px-5 py-2">Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input placeholder="Your favorite position" class="w-full p-4 outline-none text-gray-600" type="text">
+                    <button type="button" title="Start buying" class="ml-auto py-3 px-6 rounded-lg text-center transition bg-gradient-to-br from-pink-500 to-purple-500 hover:to-purple-600 active:from-pink-700 focus:from-pink-600 md:px-12">
+                        <span class="hidden text-white font-semibold md:block">
+                            Search
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mx-auto text-white md:hidden" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="pb-16">
+            <div class="md:px-12">
+                <span class="block text-center font-medium text-pink-50">Trusted by your favorite giants</span>
+                <div class="mt-8 -mx-6 px-6 overflow-x-auto md:overflow-x-hidden">
+                    <div class="w-max flex justify-center flex-wrap items-center gap-4 md:w-auto md:gap-6 lg:gap-8">
+                        <div class="flex items-center">
+                            <img class="w-36 grayscale contrast-200 brightness-200" src="images/clients/microsoft.png" alt="client logo" loading="lazy" width="100" height="122">
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-28 grayscale contrast-200 brightness-200" src="images/clients/grabyo.png" alt="client logo" loading="lazy" width="100" height="219">
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-32 grayscale contrast-200 brightness-200" src="images/clients/lifegroups.png" alt="client logo" loading="lazy" width="100" height="219">
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-24 grayscale contrast-200 brightness-200" src="images/clients/lilly.png" alt="client logo" loading="lazy" width="100" height="219">
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-28 grayscale contrast-200 brightness-200" src="images/clients/grabyo.png" alt="client logo" loading="lazy" width="100" height="219">
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-32 grayscale contrast-200 brightness-200" src="images/clients/lifegroups.png" alt="client logo" loading="lazy" width="100" height="219">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ==================js script================== -->
+/*
+
+window.addEventListener('scroll', e => {
+    const header = document.querySelector('#header_')
+    e.preventDefault()
+    header.classList.toggle('sticky-nav', window.scrollY > 0);
+})
+
+const toggleMobileMenu = document.querySelector('#hamburger')
+const navbar = document.querySelector('#navbar')
+
+toggleMobileMenu.addEventListener('click', e => {
+    e.preventDefault()
+    toggleMobileMenu.querySelector('#line').classList.toggle('rotate-45')
+    toggleMobileMenu.querySelector('#line').classList.toggle('translate-y-1.5')
+
+    toggleMobileMenu.querySelector('#line2').classList.toggle('-rotate-45')
+    toggleMobileMenu.querySelector('#line2').classList.toggle('-translate-y-1')
+    if (navbar.clientHeight === 0) {
+        navbar.style.paddingTop = '20px'
+        navbar.style.paddingBottom = '20px'
+        navbar.style.height = `${parseInt(navbar.scrollHeight) + 60}px`
+        return
+    }
+    navbar.style.height = '0px'
+    navbar.style.paddingTop = '0px'
+    navbar.style.paddingBottom = '0px'
+})
+
+*/
+                                    
+<div class="bg-gray-50 dark:bg-gray-800 py-16">
+    <div class="container m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-40">
+      <div class="mb-8">
+        <h6 class="text-lg² text-center font-bold text-cyan-500">Trusted by +5 giants</h6>
+      </div>
+      <div class="scrollbar-transparent overflow-x-auto lg:overflow-hidden">
+        <div class="-mx-6 flex space-x-6 px-6 md:space-x-12 lg:justify-between">
+          <img
+            src="images/clients/airbnb.svg"
+            loading="lazy"
+            class="grayscale transition hover:grayscale-0"
+            alt="logo"
+          />
+          <img
+            src="images/clients/tailus.svg"
+            loading="lazy"
+            class="w-36 grayscale transition hover:grayscale-0"
+            alt="logo"
+          />
+          <img
+            src="images/clients/ge.svg"
+            loading="lazy"
+            class="grayscale transition hover:grayscale-0"
+            alt="logo"
+          />
+          <img
+            src="images/clients/coty.svg"
+            loading="lazy"
+            class="grayscale transition hover:grayscale-0"
+            alt="logo"
+          />
+          <img
+            src="images/clients/microsoft.svg"
+            loading="lazy"
+            class="grayscale transition hover:grayscale-0"
+            alt="logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+                                      
+
+
+
+
+
+
+
+
+
+
+  <main class="relative min-h-screen flex flex-col justify-center overflow-hidden bg-gradient-to-b from-slate-900/90 via-slate-800/70 to-black/80 shadow-lg">
+    <!-- Contenedor principal -->
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-32">
+        
+        <!-- Título principal y subtítulo -->
+        <div class="text-center relative z-10">
+            <h1 class="inline-flex font-extrabold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-400 pb-4 transition-transform duration-300 hover:scale-105">
+                Bienvenido a Aleweb
+            </h1>
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-lg text-slate-300">
+                    <span class="service-text inline-block transition-transform duration-300 hover:text-white hover:scale-110">Aplicaciones</span>,
+                    <span class="service-text inline-block transition-transform duration-300 hover:text-white hover:scale-110">recursos</span>,
+                    <span class="service-text inline-block transition-transform duration-300 hover:text-white hover:scale-110">IAs</span>,
+                    <span class="service-text inline-block transition-transform duration-300 hover:text-white hover:scale-110">descargas</span> y
+                    <span class="service-text inline-block transition-transform duration-300 hover:text-white hover:scale-110">mucho más</span>
+                </p>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="inline-flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <div>
+                    <a class="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/50 hover:bg-blue-700 hover:shadow-blue-600/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-blue-300 active:bg-blue-800 transition-all duration-150 group" href="#features">
+                        Ver más <span class="tracking-normal text-indigo-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-700 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-slate-500/50 hover:bg-slate-600 hover:shadow-slate-600/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300 active:bg-slate-800 transition-all duration-150" href="documentacion/documentacion.html">
+                        Leer documentación
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+

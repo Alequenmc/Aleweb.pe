@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        body.loaded {
+            opacity: 1;
+        }
+
+        .hero-section {
+            background: url('espacio.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 2rem;
+            position: relative;
+            animation: neon 2s alternate infinite;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ff00ff;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        .contact-info {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-top: 2px solid #ff00ff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+        }
+
+        .contact-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-link {
+            color: #00ffff;
+            font-size: 1.5rem;
+            margin: 0 10px 20px;
+            transition: transform 0.3s, text-shadow 0.3s;
+            position: relative;
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        .contact-link:hover {
+            transform: scale(1.2);
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+            }
+            to {
+                text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 20px #00ffff;
+            }
+        }
+
+        .contact-link::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ff00ff;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: opacity 0.3s;
+            border-radius: 10px;
+            opacity: 0;
+        }
+
+        .contact-link:hover::after {
+            opacity: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem 0;
+            color: #e0e0e0;
+            background: #000;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .contact-link {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.8rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .contact-link {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="loaded">
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Contact Us</h1>
+            <p class="hero-subtitle">si me sigues me ayudarias mucho!</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2 class="section-title">Informacion del contacto </h2>
+        <div class="contact-icons">
+           
+            <a href="https://wa.me/51902513998" class="contact-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://youtu.be/jFSGmgwP418?si=dthgFLAzx1U0Ett3" class="contact-link"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://www.instagram.com/alequenmc?igsh=MWJmNDVrczd1c3Bicg==" class="contact-link"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/share/oVTowJP3MdxWJQzW/?mibextid=qi2Omg" class="contact-link"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://open.spotify.com/track/4kJUor07LmdWoQRMy6AVjo?si=12AOv936SDi00nVp-1oPtA" class="contact-link"><i class="fab fa-spotify"></i> Spotify</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; AleWeb.pe </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

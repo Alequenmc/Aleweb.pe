@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #d8f3fa, #f3c6eb,#9dc7f7);
+    color: #111111; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0a2bbe; 
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #222121; 
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #2196F3; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 5px;
+}

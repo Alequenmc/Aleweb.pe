@@ -1,0 +1,170 @@
+/* From Uiverse.io by Na3ar-17 */ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #0f172a 0%, #1e293b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: 363px;
+    height: 130px;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(148, 163, 184, 0.2) 0%, transparent 70%);
+    z-index: 0;
+  }
+  
+  .card::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -30%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(29, 78, 216, 0.1) 0%, transparent 80%);
+    z-index: 0;
+  }
+  
+  .card .header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card .header .title {
+    color: #7dd3fc;
+    font-size: 14px;
+    padding: 2px 12px;
+  }
+  
+  .card .header .copy {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .card .header .copy:hover {
+    color: #cbd5e1;
+  }
+  
+  .card .header::before {
+    content: "";
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #64748b4d;
+    right: 1px;
+    bottom: 0;
+    background-color: #33415580;
+    width: 282px;
+    height: 33px;
+    z-index: 1;
+  }
+  
+  .card .header::after {
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 1px;
+    background-color: #7dd3fc;
+    bottom: 0;
+  }
+  
+  .card .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 10px;
+    z-index: 1;
+  }
+  
+  .card .footer .code {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card .footer .code .icon {
+    color: rgb(244, 114, 182);
+    padding-top: 3px;
+  }
+  
+  .card .footer .code .text {
+    padding-left: 3px;
+    color: #f8fafc;
+  }
+  
+  .api-info {
+    margin-top: 20px;
+    color: #e2e8f0;
+    font-size: 16px;
+    background: linear-gradient(120deg, #1e293b 0%, #0f172a 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .api-info .not-available {
+    color: #f87171;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button-container .btn-primary {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container .btn-primary:hover {
+    background-color: #3b82f6;
+  }
+  

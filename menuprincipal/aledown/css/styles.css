@@ -1,0 +1,56 @@
+body {
+    background-color: #0a0a0a;
+    font-family: 'Roboto', sans-serif;
+}
+.highlight {
+    color: #38bdf8; 
+}
+.section {
+    background: linear-gradient(135deg, #0b041d 0%, #0e093d 100%);
+    padding: 100px 20px;
+}
+.glow-button {
+    background-color: #38bdf8;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+    transition: all 0.3s ease;
+}
+.glow-button:hover {
+    box-shadow: 0 0 25px rgba(56, 189, 248, 1);
+    transform: scale(1.05);
+}
+.hero-section {
+    background-image: url('https://images.unsplash.com/photo-1536522117825-30ffb9d35e1a?auto=format&fit=crop&w=1350&q=80'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.5);
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-input {
+    background-color: #1E293B;
+    border: 2px solid #38bdf8;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.custom-input:focus {
+    border-color: #0284c7;
+    outline: none;
+    box-shadow: 0 0 10px rgba(2, 132, 199, 0.8);
+}

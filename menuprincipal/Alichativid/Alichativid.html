@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alichativid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#3B82F6',
+                        'secondary': '#1E40AF',
+                        'accent': '#F59E0B',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="font-poppins text-white bg-gradient-to-b from-gray-900 to-black min-h-screen">
+    <header class="bg-black bg-opacity-70 backdrop-blur-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../404.html" class="text-3xl font-bold text-primary hover:text-white transition duration-300">
+                Alichativid
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../404.html" class="text-lg hover:text-primary transition duration-300">Inicio</a>
+                <a href="../404.html#peliculas" class="text-lg hover:text-primary transition duration-300">Películas</a>
+                <a href="../404.html#futbol" class="text-lg hover:text-primary transition duration-300">Fútbol</a>
+                <a href="../404.html#funciones" class="text-lg hover:text-primary transition duration-300">Funciones</a>
+                <a href="../404.html#testimonios" class="text-lg hover:text-primary transition duration-300">Testimonios</a>
+                <a href="../404.html#faq" class="text-lg hover:text-primary transition duration-300">FAQ</a>
+                <a href="../404.html#contacto" class="text-lg hover:text-primary transition duration-300">Contacto</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90">
+            <a href="../404.html" class="block py-2 px-4 hover:bg-primary transition duration-300">Inicio</a>
+            <a href="../404.html#peliculas" class="block py-2 px-4 hover:bg-primary transition duration-300">Películas</a>
+            <a href="../404.html#futbol" class="block py-2 px-4 hover:bg-primary transition duration-300">Fútbol</a>
+            <a href="../404.html#funciones" class="block py-2 px-4 hover:bg-primary transition duration-300">Funciones</a>
+            <a href="../404.html#testimonios" class="block py-2 px-4 hover:bg-primary transition duration-300">Testimonios</a>
+            <a href="../404.html#faq" class="block py-2 px-4 hover:bg-primary transition duration-300">FAQ</a>
+            <a href="../404.html#contacto" class="block py-2 px-4 hover:bg-primary transition duration-300">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
+            <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4">
+            </video>
+            <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-aos="fade-down">
+                    Experimenta el <span class="text-primary">Cine Social</span> con Alichativid
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300" data-aos="fade-up" data-aos-delay="200">
+                    Conecta con amigos, comenta en tiempo real y disfruta de una experiencia cinematográfica única.
+                </p>
+                <a href="../404.html" class="inline-block px-8 py-4 bg-primary text-white rounded-full text-lg font-semibold hover:bg-secondary transition duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+                    Explorar Catálogo
+                </a>
+            </div>
+        </section>
+
+        <section id="peliculas" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    Descubre Nuestro <span class="text-primary">Catálogo</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Película 1 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 duration-300" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80" alt="Película 1" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">nose 1</h3>
+                            <p class="text-gray-400 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut id doloremque quam nam, architecto corrupti natus sint animi voluptates adipisci excepturi inventore beatae quisquam deleniti perspiciatis placeat quaerat incidunt quos?</p>
+                            <a href="../404.html" class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition duration-300">
+                                <i class="fas fa-play mr-2"></i> Ver Ahora
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Película 2 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=800&q=80" alt="Película 2" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">nose 2</h3>
+                            <p class="text-gray-400 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non beatae reiciendis cum esse velit vel accusantium quaerat placeat, iure, in libero temporibus necessitatibus laboriosam fugiat voluptatum neque amet dolorum unde!</p>
+                            <a href="../404.html" class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition duration-300">
+                                <i class="fas fa-play mr-2"></i> Ver Ahora
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Película 3 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Película 3" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">nose 3</h3>
+                            <p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda accusantium non, nobis tempora, distinctio asperiores a nisi expedita odit vero at doloribus, cumque minima repellendus! Quod amet quisquam reiciendis, pariatur excepturi.</p>
+                            <a href="../404.html" class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition duration-300">
+                                <i class="fas fa-play mr-2"></i> Ver Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="futbol" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    Últimos <span class="text-primary">Partidos de Fútbol</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Partido 1 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 duration-300" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1594822787190-0b3c2077b0e0?auto=format&fit=crop&w=800&q=80" alt="Partido 1" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">jdoxx</h3>
+                            <p class="text-gray-400 mb-4">mira partidos en linea y gratis </p>
+                            <a href="../404.html" class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition duration-300">
+                                <i class="fas fa-futbol mr-2"></i> Ver Ahora
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section id="testimonios" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    Lo Que Dicen Nuestros <span class="text-primary">Usuarios</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-lg p-6 text-center" data-aos="fade-up">
+                        <p class="text-gray-400 mb-4">"Me encanta Alichativid, ¡es la mejor forma de ver películas con amigos!"</p>
+                        <h4 class="font-semibold">- Usuario 1</h4>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-gray-400 mb-4">"La función de chat en tiempo real es genial, me hace sentir como si estuviera en el cine."</p>
+                        <h4 class="font-semibold">- Usuario 2</h4>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-gray-400 mb-4">"Un gran catálogo de películas, siempre encuentro algo que ver."</p>
+                        <h4 class="font-semibold">- Usuario 3</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    Preguntas Frecuentes
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-800 rounded-lg p-6" data-aos="fade-up">
+                        <h3 class="font-semibold text-xl">¿Es gratuito Alichativid?</h3>
+                        <p class="text-gray-400">Sí, puedes acceder a todas nuestras funciones sin costo.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="font-semibold text-xl">¿Puedo ver películas sin conexión?</h3>
+                        <p class="text-gray-400">Actualmente solo ofrecemos streaming en línea.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="font-semibold text-xl">¿Qué dispositivos son compatibles?</h3>
+                        <p class="text-gray-400">Puedes ver Alichativid en cualquier dispositivo con conexión a Internet y navegador.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    Contáctanos
+                </h2>
+                <form action="../404.html" method="POST" class="bg-gray-800 rounded-lg p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block mb-2" for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2" for="email">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2" for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-md" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition duration-300">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="py-6 bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-gray-400">&copy; 2024 Alichativid. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descarga APKs modificadas y aplicaciones gratuitas sin virus. Accede a una amplia gama de aplicaciones en Alimod.">
+    <meta name="keywords" content="APK, aplicaciones, descarga, gratis, modificadas, Alimod">
+    <meta name="author" content="Alex">
+    <title>Alimod</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'alimod-bg': '#121212',
+                        'alimod-primary': '#BB86FC',
+                        'alimod-secondary': '#03DAC6',
+                        'alimod-error': '#CF6679',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(87, 108, 117, 0.1) 0%, rgba(37, 50, 55, 0.1) 100.2%),
+                linear-gradient(45deg, #121212, #1E1E1E);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-alimod-bg text-gray-200 font-poppins">
+    <body class="bg-alimod-bg text-gray-200 font-poppins">
+        <header class="py-4 fixed w-full z-20 glass-effect">
+            <div class="container mx-auto flex justify-between items-center px-4">
+                <a href="../menuprincipal.html" class="text-3xl font-bold text-alimod-primary">
+                    <i class="fas fa-rocket mr-2"></i>Alimod
+                </a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#apks" class="text-lg hover:text-alimod-secondary transition duration-300">Menu</a>
+                    <a href="#categorias" class="text-lg hover:text-alimod-secondary transition duration-300">Aledown</a>
+                    <a href="#faq" class="text-lg hover:text-alimod-secondary transition duration-300">Alivid</a>
+                </nav>
+                <button class="md:hidden text-2xl" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden bg-alimod-bg py-4 px-4">
+                <a href="#apks" class="block py-2 hover:text-alimod-secondary transition duration-300">Menu</a>
+                <a href="#categorias" class="block py-2 hover:text-alimod-secondary transition duration-300">Alivid</a>
+                <a href="#faq" class="block py-2 hover:text-alimod-secondary transition duration-300">Aledown</a>
+            </nav>
+        </header>
+    
+        <section class="h-screen flex items-center justify-center text-center relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+            <div class="relative z-10 max-w-3xl p-8 glass-effect rounded-xl">
+                <h1 class="text-5xl font-bold mb-6 text-white">
+                    Descarga <span class="text-alimod-primary">APKs Modificados</span> de Calidad
+                </h1>
+                <p class="text-xl mb-8 text-gray-300">Accede a aplicaciones premium con funciones desbloqueadas, totalmente gratis y sin virus.</p>
+                <a href="../404.html" class="px-8 py-4 bg-alimod-primary text-black text-lg font-semibold rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 inline-flex items-center">
+                    <i class="fas fa-download mr-2"></i>Explorar APKs
+                </a>
+            </div>
+        </section>
+        <section id="apks" class="py-8">
+            <div class="container mx-auto text-center px-2">
+                <h2 class="text-2xl font-bold mb-6 text-alimod-primary">APKs Destacados</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="apk-list">
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Spotify" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2 text-white">Spotify Premium</h3>
+                            <p class="text-gray-400 text-sm mb-2">Música sin anuncios y descarga ilimitada.</p>
+                            <ul class="text-left text-gray-400 text-sm mb-2">
+                                <li><strong>Versión:</strong> 8.6.32</li>
+                                <li><strong>Tamaño:</strong> 65 MB</li>
+                                <li><strong>Actualizado:</strong> 15 de septiembre de 2024</li>
+                                <li><strong>Descargas:</strong> 1.2M</li>
+                            </ul>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-yellow-400 text-sm"><i class="fas fa-star"></i> 4.8/5</span>
+                                <span class="text-gray-400 text-sm">1.5M opiniones</span>
+                            </div>
+                            <button class="w-full px-4 py-2 bg-alimod-secondary text-black font-semibold rounded-lg shadow-lg hover:bg-opacity-90 transition duration-300 text-sm" onclick="showDownloadBox('Spotify Premium', 'https:example.com/spotify-premium.apk')">
+                                <i class="fas fa-download mr-2"></i>Descargar
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80" alt="WhatsApp Plus" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2 text-white">WhatsApp Plus</h3>
+                            <p class="text-gray-400 text-sm mb-2">Funcionalidades adicionales, temas y personalización avanzada.</p>
+                            <ul class="text-left text-gray-400 text-sm mb-2">
+                                <li><strong>Versión:</strong> 10.20</li>
+                                <li><strong>Tamaño:</strong> 477 MB</li>
+                                <li><strong>Actualizado:</strong> 10 de octubre de 2024</li>
+                                <li><strong>Descargas:</strong> 3.5M</li>
+                            </ul>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-yellow-400 text-sm"><i class="fas fa-star"></i> 4.5/5</span>
+                                <span class="text-gray-400 text-sm">2.8M opiniones</span>
+                            </div>
+                            <button class="w-full px-4 py-2 bg-alimod-secondary text-black font-semibold rounded-lg shadow-lg hover:bg-opacity-90 transition duration-300 text-sm" onclick="showDownloadBox('WhatsApp Plus', 'https:mediafire.com/whatsapp-plus.apk')">
+                                <i class="fas fa-download mr-2"></i>Descargar
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+   
+    <!-- solo hare 6 secciones por q me da flojera-->
+    <section id="categorias" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-12 text-alimod-secondary">Categorías Populares</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Juegos -->
+                <a href="#" class="category-card p-6 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300">
+                    <i class="fas fa-gamepad text-4xl mb-4 text-alimod-primary"></i>
+                    <h3 class="text-lg font-semibold">Juegos</h3>
+                </a>
+                <!-- Música -->
+                <a href="#" class="category-card p-6 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300">
+                    <i class="fas fa-music text-4xl mb-4 text-alimod-primary"></i>
+                    <h3 class="text-lg font-semibold">Música</h3>
+                </a>
+                <!-- Películas -->
+                <a href="#" class="category-card p-6 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300">
+                    <i class="fas fa-film text-4xl mb-4 text-alimod-primary"></i>
+                    <h3 class="text-lg font-semibold">Películas</h3>
+                </a>
+                <!-- Educación -->
+                <a href="#" class="category-card p-6 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300">
+                    <i class="fas fa-book text-4xl mb-4 text-alimod-primary"></i>
+                    <h3 class="text-lg font-semibold">Educación</h3>
+                </a>
+                <!-- Fotografía -->
+                <a href="#" class="category-card p-6 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300">
+                    <i class="fas fa-camera text-4xl mb-4 text-alimod-primary"></i>
+                    <h3 class="text-lg font-semibold">Fotografía</h3>
+                </a>
+                <!-- Herramientas -->
+                <a href="#" class="category-card p-6 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300">
+                    <i class="fas fa-tools text-4xl mb-4 text-alimod-primary"></i>
+                    <h3 class="text-lg font-semibold">Herramientas</h3>
+                </a>
+            
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="download-box" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full glass-effect">
+            <h3 class="text-2xl font-bold mb-4 text-white">Descargar <span id="apk-name" class="text-alimod-primary"></span></h3>
+            <div id="subscribe-youtube" class="mb-6">
+                <p class="mb-4 text-gray-300">Apoya nuestro trabajo suscribiéndote a nuestro canal de YouTube.</p>
+                <a id="subscribe-link" href="https://www.youtube.com/@AlequenMC" target="_blank" class="block px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition duration-300 text-center">
+                    <i class="fab fa-youtube mr-2"></i>Suscribirse en YouTube
+                </a>
+            </div>
+            <div id="captcha" class="g-recaptcha mb-6" data-sitekey="6Ldb21YqAAAAAP92cYO7wMhiju2TetiovH3MsqAz"></div>
+            <button id="confirm-download" onclick="confirmDownload()" class="w-full px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
+                <i class="fas fa-check mr-2"></i>Confirmar Descarga
+            </button>
+            <button onclick="closeDownloadBox()" class="mt-4 text-gray-400 hover:text-white transition duration-300">
+                <i class="fas fa-times mr-2"></i>Cerrar
+            </button>
+        </div>
+    </div>
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 mb-4">&copy; 2023 Alimod. Todos los derechos reservados.</p>
+            <p class="text-gray-500 text-sm">Alimod no se hace responsable del mal uso de las aplicaciones descargadas. Úsalas bajo tu propia responsabilidad.</p>
+        </div>
+    </footer>
+
+ <!-- la descarga tiene q seguir pero que siga la logica de suscribirse al canal pero solo una vez   -->
+
+    <script>
+    let currentDownloadLink = '';
+    let hasSubscribed = false;
+
+    function showDownloadBox(apkName, downloadLink) {
+        document.getElementById('download-box').classList.remove('hidden');
+        document.getElementById('apk-name').textContent = apkName;
+        currentDownloadLink = downloadLink;
+
+        if (hasSubscribed) {
+            document.getElementById('subscribe-youtube').classList.add('hidden');
+        } else {
+            document.getElementById('subscribe-youtube').classList.remove('hidden');
+        }
+    }
+
+    function closeDownloadBox() {
+        document.getElementById('download-box').classList.add('hidden');
+        grecaptcha.reset();
+    }
+
+    function confirmDownload() {
+        if (grecaptcha.getResponse()) {
+            hasSubscribed = true;
+            window.location.href = currentDownloadLink;
+            closeDownloadBox();
+        } else {
+            alert('Por favor, completa el captcha antes de descargar.');
+        }
+    }
+
+    document.getElementById('subscribe-link').addEventListener('click', function() {
+        hasSubscribed = true;
+        this.textContent = '¡Gracias por suscribirte!';
+        this.classList.remove('bg-red-600', 'hover:bg-red-700');
+        this.classList.add('bg-green-600', 'hover:bg-green-700');
+    });
+    </script>
+</body>
+</html>
